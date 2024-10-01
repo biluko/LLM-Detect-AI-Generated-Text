@@ -1,9 +1,9 @@
 # LLM-Detect-AI-Generated-Text
 在近年来，大型语言模型（LLM）的发展日益成熟，它们生成的文本越来越难以与人类的写作相区分。竞赛要求参赛者开发一个能准确检测出一篇文章是由学生还是LLM写成的机器学习模型。竞赛数据集包含了学生写的论文和由各种LLM生成的文章。该竞赛为典型的二分类问题，评价指标为AUC。
 
-所用算法：
+# 所用算法：
 
-本次竞赛使用了三种模型进行推理：
+## 本次竞赛使用了三种模型进行推理：
 
 1.	基于与比赛数据集分布相似构成特定议论文数据集（DAIGT V2 Train Dataset）的线性模型：
 
@@ -25,7 +25,7 @@ b)	将大规模数据简单处理后输入到文本二分类模型deberta-v3-sma
 
 4.	集成预测：将三种建模方法的预测结果进行rank scale后加权融合得到最终预测。
 
-数据与模型链接：
+## 数据与模型链接：
 
 Pile and Ultra：https://www.kaggle.com/datasets/canming/piles-and-ultra-data
 
@@ -36,7 +36,7 @@ DAIGT V2 Train Dataset：https://www.kaggle.com/datasets/thedrcat/daigt-v2-train
 
 开源语言模型: https://www.kaggle.com/code/mustafakeser4/train-detectai-distilroberta-0-927
 
-代码说明：
+## 代码说明：
 
 深度学习模型训练代码：Deberta_train.py
 
